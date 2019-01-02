@@ -1,0 +1,53 @@
+{
+  "name": "babel-plugin-typescript-iife-enum",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "types": "src/index.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "license": "WTFPL",
+  "author": "Morlay Null <morlay.null@gmail.com>",
+  "scripts": {
+    "fmt": "prettier --write 'src/**/*.{ts,tsx,json,md}'",
+    "build": "tsc",
+    "test": "npm run fmt && jest",
+    "prepare": "npm test && npm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.x",
+    "@types/babel__core": "7.0.4",
+    "@types/jest": "23.3.x",
+    "@types/node": "10.12.18",
+    "jest": "23.6.x",
+    "prettier": "1.15.x",
+    "ts-jest": "23.10.x",
+    "ts-node": "7.0.x",
+    "typescript": "3.2.x",
+    "@babel/plugin-transform-typescript": "^7.2.0"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-typescript": "^7.2.x",
+    "@babel/traverse": "^7.2.x",
+    "@babel/types": "^7.2.x",
+    "@types/babel__traverse": "^7.0.x"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "tsx",
+      "ts",
+      "json",
+      "jsx",
+      "js"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "testRegex": ".*/__tests__/.+\\.(test|spec)\\.(ts|tsx)$"
+  }
+}

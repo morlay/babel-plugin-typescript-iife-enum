@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "target": "es2015",
+    "sourceMap": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules/*",
+    "lib/*"
+  ]
+}
