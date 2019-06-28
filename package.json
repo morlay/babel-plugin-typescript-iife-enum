@@ -26,10 +26,10 @@
     "ts-node": "8.3.0",
     "typescript": "3.5.2",
     "@babel/plugin-transform-typescript": "7.4.5",
-    "@babel/plugin-syntax-typescript": "7.3.x",
-    "@babel/traverse": "7.4.x",
-    "@babel/types": "7.4.x",
-    "@types/babel__traverse": "^7.0.x"
+    "@babel/plugin-syntax-typescript": "7.3.3",
+    "@babel/traverse": "7.4.5",
+    "@babel/types": "7.4.4",
+    "@types/babel__traverse": "7.0.4"
   },
   "peerDependencies": {
     "@babel/plugin-syntax-typescript": "7.3.x",
