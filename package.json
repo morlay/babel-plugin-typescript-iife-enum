@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.2.x",
-    "@types/babel__core": "7.0.4",
+    "@types/babel__core": "7.1.2",
     "@types/jest": "23.3.x",
     "@types/node": "10.12.18",
     "jest": "23.6.x",
