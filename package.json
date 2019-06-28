@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-typescript-iife-enum",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "types": "src/index.ts",
   "files": [
@@ -16,21 +16,25 @@
     "prepare": "npm test && npm run build"
   },
   "devDependencies": {
-    "@babel/core": "7.2.2",
-    "@types/babel__core": "7.0.4",
-    "@types/jest": "23.3.5",
-    "@types/node": "10.12.18",
-    "jest": "23.6.0",
-    "prettier": "1.15.3",
-    "ts-jest": "23.10.4",
-    "ts-node": "7.0.1",
-    "typescript": "3.2.2",
-    "@babel/plugin-transform-typescript": "7.2.0"
+    "@babel/core": "7.4.5",
+    "@types/babel__core": "7.1.2",
+    "@types/jest": "24.0.15",
+    "@types/node": "12.0.10",
+    "jest": "24.8.0",
+    "prettier": "1.18.2",
+    "ts-jest": "24.0.2",
+    "ts-node": "8.3.0",
+    "typescript": "3.5.2",
+    "@babel/plugin-transform-typescript": "7.4.5",
+    "@babel/plugin-syntax-typescript": "7.3.x",
+    "@babel/traverse": "7.4.x",
+    "@babel/types": "7.4.x",
+    "@types/babel__traverse": "^7.0.x"
   },
-  "dependencies": {
-    "@babel/plugin-syntax-typescript": "^7.2.x",
-    "@babel/traverse": "^7.2.x",
-    "@babel/types": "^7.2.x",
+  "peerDependencies": {
+    "@babel/plugin-syntax-typescript": "7.3.x",
+    "@babel/traverse": "7.4.x",
+    "@babel/types": "7.4.x",
     "@types/babel__traverse": "^7.0.x"
   },
   "jest": {

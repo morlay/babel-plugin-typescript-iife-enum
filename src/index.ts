@@ -1,5 +1,5 @@
 import { template, types } from "@babel/core";
-import { NodePath } from "@babel/traverse";
+import { Node, NodePath } from "@babel/traverse";
 
 const buildEnumWrapper = template(`
 const ID = (function () {
@@ -23,21 +23,21 @@ export default () => {
           return;
         }
 
-        path.replaceWith(
-          buildEnumWrapper({
-            ID: types.clone(path.node.id),
-            ENUM: {
-              ...path.node,
-              leadingComments: [
-                ...(path.node.leadingComments ? path.node.leadingComments : []),
-                {
-                  type: "LineComponent",
-                  value: IIEF_ENUM,
-                },
-              ],
-            },
-          }),
-        );
+        const nextNode = buildEnumWrapper({
+          ID: types.clone(path.node.id),
+          ENUM: {
+            ...path.node,
+            leadingComments: [
+              ...(path.node.leadingComments ? path.node.leadingComments : []),
+              {
+                type: "LineComponent",
+                value: IIEF_ENUM,
+              },
+            ],
+          },
+        });
+
+        path.replaceWith(nextNode as Node);
       },
     },
   };
