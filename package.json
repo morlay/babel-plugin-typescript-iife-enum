@@ -24,7 +24,7 @@
     "prettier": "1.18.2",
     "ts-jest": "24.0.2",
     "ts-node": "8.3.0",
-    "typescript": "3.5.2",
+    "typescript": "3.5.3",
     "@babel/plugin-transform-typescript": "7.4.5",
     "@babel/plugin-syntax-typescript": "7.3.x",
     "@babel/traverse": "7.4.x",
