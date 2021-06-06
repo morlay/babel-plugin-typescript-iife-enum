@@ -20,7 +20,7 @@
     "@types/babel__core": "7.1.x",
     "@types/jest": "24.0.x",
     "@types/node": "12.6.x",
-    "jest": "24.8.x",
+    "jest": "25.0.x",
     "prettier": "1.18.x",
     "ts-jest": "24.0.x",
     "ts-node": "8.3.x",
