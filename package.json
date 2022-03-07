@@ -18,9 +18,9 @@
   "devDependencies": {
     "@babel/core": "7.5.x",
     "@types/babel__core": "7.1.x",
-    "@types/jest": "24.0.x",
+    "@types/jest": "24.9.x",
     "@types/node": "12.6.x",
-    "jest": "24.8.x",
+    "jest": "24.9.x",
     "prettier": "1.18.x",
     "ts-jest": "24.0.x",
     "ts-node": "8.3.x",
