@@ -29,7 +29,7 @@
     "@babel/plugin-syntax-typescript": "7.3.x",
     "@babel/traverse": "7.5.x",
     "@babel/types": "7.5.x",
-    "@types/babel__traverse": "7.0.x"
+    "@types/babel__traverse": "7.20.x"
   },
   "peerDependencies": {
     "@babel/plugin-syntax-typescript": "7.x",
